@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+.countdown {
+  text-align: center;
+  position: absolute;
+  bottom: 80px;
+  width: 400px;
+  left: 50%;
+  margin-left: -200px;
+  font-size: 0;
+  z-index: 99999;
+  opacity: 0;
+}
+.countdown > span {
+    width: 67px;
+    font-size: 26px;
+    color: #05205f;
+    margin: 0 5px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    height: 46px;
+    padding-top:0;
+    box-sizing: border-box;
+    position: relative;
+}
+.countdown > span > span{
+  width: 32px;
+  height: 46px;
+  line-height: 46px;
+  background: #ffffff;
+  border-bottom: 2px solid #e8b25d;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.countdown > span > span:after{
+  content: "";
+  background: #d9edf7;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 23px;
+  display: block;
+  width: 32px;
+  z-index: 1;
+  box-shadow: inset 0 1px 3px #8dc8e7;
+}
+.countdown > span > span > span{
+  z-index: 3;
+  position: relative;
+  color: #2d9dc8;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.countdown > span > span:first-child{
+  margin-right: 3px;
+}
+
+.countdown span:after{
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    display: block;
+  position: relative;
+  bottom: -8px;
+  color: #05205f;
+}
+.countdown span#days:after{
+    content: "Days";
+}
+.countdown span#hours:after{
+    content: "Hours";
+}
+.countdown span#minutes:after{
+    content: "Minutes";
+}
+.countdown span#seconds:after{
+    content: "Seconds";
+}

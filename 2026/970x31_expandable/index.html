@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta data-template-name="Template_H5T_expanding-970x31-image">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="countdown.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_1.18.5_3bb7bb8f4b38ac71b33dad50f1b17f49_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_1.18.5_6bbddbd910e8bfac4e19220fe52e1af6_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/easepack_1.18.5_4405b7326844d606cf693d06af83ddfd_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinelite_1.18.5_2fb4c19072a581c3daede85bd891458e_min.js"></script>
+
+
+  <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+
+</head>
+<body>
+    <div id="main-container">
+      <!-- Collapsed Conent -->
+      <div id="collapsed-state">
+        <div id="collapsed-exit"></div>
+          <div class="feature-collapsed" id="feature-collapsed">
+            <div id="main-img-0"></div>
+          </div>
+          <div id="expand-button" class="button">
+            <img src="btn-more.png"/>
+          </div>
+      </div>
+
+      <!-- Expand Content -->
+      <div id="expanded-state">
+        <div id="expanded-exit"></div>
+        <div id="collapse-button" class="button">Close ad</div>
+        <div class="feature-expanded" id="feature-expanded">
+          <div class="hl-wrapper" id="hl">
+            <img class="hl" src="hl.png" />
+            <div class="plane-wrapper"><span id="line" class="line"></span><img class="plane" src="plane.png" /></div>
+          </div>
+
+          <img class="pp" id="pp" src="pp.png" />
+          <img class="pp" id="pp1" src="pp1.png" />
+          <img class="pp" id="pp2" src="pp2.png" />
+          <img class="pp" id="pp3" src="pp3.png" />
+
+          <div id="countdown" class="countdown" data-deadline="09/1/2016 12:00:00 AM" data-timeline-show="10000" data-timeline-hide="false">
+            <span id="days" class="days"><span><span>-</span></span><span><span>-</span></span></span>
+            <span id="hours" class="hours"><span><span>-</span></span><span><span>-</span></span></span>
+            <span id="minutes" class="minutes"><span><span>-</span></span><span><span>-</span></span></span>
+          </div>
+
+          <img id="cta" class="cta" src="cta.png" />
+          <span id="terms" class="terms">terms and conditions apply </span>
+
+          <img class="logo" src="logo.png" />
+
+        </div>
+      </div>
+    </div>
+    <script>
+  Enabler.setExpandingPixelOffsets(0, 0, 970, 250);
+    </script>
+
+  <script src="countdown.js"></script>
+  <script src="logic.js"></script>
+</body>
+</html>
