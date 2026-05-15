@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<title>300x250</title>
+    
+    <!--DEFINE YOUR AD SIZE HERE-->
+	<meta name="ad.size" content="width=300,height=250">
+    
+     <!--PLACE A GLOBAL CLICKTAG VARIABLE HERE-->
+  <script type="text/javascript" src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"> </script>
+
+	<!--Adobe Edge Runtime-->
+    <script type="text/javascript" charset="utf-8" src="edge_includes/edge.6.0.0.min.js"></script>
+    <style>
+        .edgeLoad-EDGE-5085022 { visibility:hidden; }
+			
+		#bgclickBTN {
+			width:300px;
+			height:240px;
+			position: absolute;
+			top:20px;
+			left:0px;
+			z-index:100;
+			cursor:pointer;
+			overflow:hidden;
+			}
+			
+		#bgclickBTN2 {
+			width:300px;
+			height:20px;
+			position: absolute;
+			top:0px;
+			left:0px;
+			z-index:110;
+			cursor:pointer;
+			overflow:hidden;
+			}
+			
+    </style>
+<script>
+   AdobeEdge.loadComposition('300x250', 'EDGE-5085022', {
+    scaleToFit: "none",
+    centerStage: "none",
+    minW: "0px",
+    maxW: "undefined",
+    width: "300px",
+    height: "250px"
+}, {"dom":{}}, {"dom":{}});
+
+function init () {
+	console.log('Test');
+setTimeout(myTimer, 14000);
+document.getElementById("bgclickBTN2").style.left = "0px";
+};
+
+function myTimer() {
+	document.getElementById("bgclickBTN2").style.left = "-43px";
+  
+}
+
+</script>
+<!--Adobe Edge Runtime End-->
+ <script type='text/javascript'> var clickTag = 'https://www.singaporeair.com/'</script> 
+
+</head>
+<body style="margin:0;padding:0;" onload="init()">
+<a onclick="ExitApi.exit()">
+<div id="bgclickBTN"></div> 
+<div id="bgclickBTN2"></div> 
+</a>
+<a onclick="init()">
+   	<div id="Stage" class="EDGE-5085022">
+	</div>  </a>
+
+</body>
+</html>
